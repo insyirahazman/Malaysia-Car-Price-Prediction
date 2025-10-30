@@ -1,4 +1,4 @@
-# Malaysia Car Price Prediction [Kaggle](https://www.kaggle.com/code/insyirahazman/car-price-prediction-using-ml)
+# Malaysia Car Price Prediction [(Kaggle)](https://www.kaggle.com/code/insyirahazman/car-price-prediction-using-ml)
 
 This repository contains a Jupyter notebook and small demo app that trains and evaluates models to predict used car prices in Malaysia. The primary notebook is `main.ipynb` and the dataset is `Malaysia_Final_CarList_Compiled.csv`.
 
@@ -77,3 +77,6 @@ Hosting options
 - `app_gradio.py` — single-prediction Gradio demo.
 - `requirements.txt` — Python packages required for the demo.
 - `Malaysia_Final_CarList_Compiled.csv` — dataset.
+
+## References
+- [Dataset (Kaggle)](https://www.kaggle.com/datasets/norazrinnatasha/malaysia-car-list-price)
