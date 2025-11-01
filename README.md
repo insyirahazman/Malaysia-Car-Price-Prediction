@@ -112,7 +112,7 @@ You can deploy this Gradio demo to Hugging Face Spaces. Two common approaches:
 
 ## Files
 - `main.ipynb` — main notebook containing EDA, preprocessing, modeling and evaluation.
-- `app.py` / `app_gradio.py` — Gradio demo for interactive predictions (single & batch).
+- `app.py` — Gradio demo for interactive predictions (single & batch).
 - `requirements.txt` — Python packages required for the demo.
 - `best_model.joblib`, `encoders.joblib` — model and encoder artifacts produced by the notebook (not committed by default unless you choose to).
 - `Malaysia_Final_CarList_Compiled.csv` — dataset.
