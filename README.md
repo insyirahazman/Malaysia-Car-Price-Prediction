@@ -7,7 +7,7 @@ https://github.com/user-attachments/assets/88e46061-631d-4a2b-a9d0-17d012d68501
 
 ---
 
-## 🧭 Project Overview
+## Project Overview
 
 This project aims to **predict the resale price of Perodua cars in Malaysia** using real-world marketplace data.  
 It demonstrates the complete data science workflow from **data cleaning and EDA** to **model training and deployment** with **Gradio** and **Hugging Face Spaces**.
@@ -57,23 +57,21 @@ Key insights from the data:
 
 ### 🔍 Recommended Visualizations
 You can include these plots for better insight:
-- Boxplot: Price vs. Model  
-- Scatterplot: Year vs. Price  
-- Histogram: Price Distribution  
+- Boxplot: Price vs. Model/Transmission/Color
+  <img width="1787" height="590" alt="image" src="https://github.com/user-attachments/assets/5d8f76be-5a99-4393-b489-b1cd658530d4" />
+  
+- Scatterplot: Price vs. Year/Mileage/Engine Capacity/Color
+  <img width="1988" height="490" alt="image" src="https://github.com/user-attachments/assets/8a614c33-9eb2-4147-ae4e-925851624e32" />
+
+- Histogram: Price Distribution
+  <img width="989" height="590" alt="image" src="https://github.com/user-attachments/assets/c48684b5-899b-4ea0-b71c-0152256b6672" />
+ 
 - Heatmap: Feature Correlation
-
-```python
-# Example: Heatmap
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-sns.heatmap(df.corr(), annot=True, cmap='coolwarm')
-plt.title("Feature Correlation Heatmap")
-plt.show()
+  <img width="1303" height="665" alt="image" src="https://github.com/user-attachments/assets/7d6a4976-0840-4850-b49a-ee32997b2e0a" />
 
 ---
 
-## Models evaluated
+## Models Evaluation
 The notebook trains and compares these models using R2, MSE, MAE, and RMSE metrics:
 
 - Simple Linear Regression (Year)
@@ -111,21 +109,6 @@ pip install -U pip
 pip install -r .\requirements.txt
 python .\app.py   # or run the Gradio cell in `main.ipynb`
 ```
-
-## Requirements (notes)
-- `requirements.txt` should pin `scikit-learn` to the version used to train the model to avoid joblib incompatibilities. A recommended minimal set includes:
-
-```
-gradio>=3.0,<4.0
-scikit-learn==1.2.2    # pin this to your training version
-pandas>=1.5.0
-numpy>=1.23.0
-joblib>=1.2.0
-huggingface_hub>=0.13.0
-scipy>=1.9.0
-```
-
-Adjust `scikit-learn==1.2.2` to the exact version you trained the model with.
 
 ## Deploying to Hugging Face Spaces (Gradio)
 You can deploy this Gradio demo to Hugging Face Spaces. Two common approaches:
