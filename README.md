@@ -1,30 +1,78 @@
-# Malaysia Car Price Prediction [(Kaggle)](https://www.kaggle.com/code/insyirahazman/perodua-car-price-prediction)
+# 🚗 Malaysia Car Price Prediction (Perodua Brand)
 
-This repository contains a Jupyter notebook and a small demo app that trains and evaluates models to predict used car prices in Malaysia. The primary notebook is `main.ipynb` and the dataset is `Malaysia_Final_CarList_Compiled.csv`.
-
-🔗Live Websites: https://huggingface.co/spaces/insyirazman/car-price-prediction
-
+**Live Demo:** [Hugging Face Spaces](https://huggingface.co/spaces/insyirazman/car-price-prediction)  
+**Notebook on Kaggle:** [View Notebook](https://www.kaggle.com/code/insyirahazman/perodua-car-price-prediction)  
+**GitHub Repository:** [View Repo](https://github.com/insyirahazman/Malaysia-Car-Price-Prediction)
 
 https://github.com/user-attachments/assets/88e46061-631d-4a2b-a9d0-17d012d68501
 
+---
 
-## Objective
-Predict the market price (`Price`) of used cars in Malaysia using vehicle attributes (Model, Year, Color, Engine.Cap, Mileage, etc.).
+## 🧭 Project Overview
 
-## Dataset
-- File: `Malaysia_Final_CarList_Compiled.csv`
-- The notebook drops non-essential columns (`Desc`, `Link`) and standardizes timestamps (`Updated`).
+This project aims to **predict the resale price of Perodua cars in Malaysia** using real-world marketplace data.  
+It demonstrates the complete data science workflow — from **data cleaning and EDA** to **model training and deployment** with **Gradio** and **Hugging Face Spaces**.
 
-## Preprocessing highlights
-- Converted `Updated` to datetime.
-- Label-encoded categorical fields (`Model`, `Engine.Cap`, `Transm`, `Color`, `Car.Type`). Saved encoders so the deployed app can accept human-readable categories.
-- Filled missing `Mileage` values with the median.
-- Detected outliers via IQR and clipped extreme `Mileage` values.
-- Removed duplicate rows.
+Completed right before my new semester begins — a great way to end the break with something productive and meaningful 💪
 
-## Exploratory analysis
-- Visualized distributions and relationships between features and price (boxplots, scatter, heatmap).
-- Found the strongest numeric correlation between `Price` and `Year` (≈ 0.81).
+---
+
+## 🎯 Objective
+
+Estimate the **resale market price** (`Price`) of used Perodua cars based on:
+
+- Model  
+- Year  
+- Color  
+- Engine Capacity  
+- Mileage  
+- Transmission  
+- Car Type  
+
+---
+
+## 🧩 Dataset
+
+- **File:** `Malaysia_Final_CarList_Compiled.csv`  
+- **Source:** [Kaggle Dataset](https://www.kaggle.com/datasets/norazrinnatasha/malaysia-car-list-price)  
+- **Size:** ~10K+ rows of used car listings  
+- **Target Variable:** `Price`
+
+### Data Cleaning Steps
+- Dropped irrelevant columns (`Desc`, `Link`)
+- Converted `Updated` column to datetime
+- Label-encoded categorical features (`Model`, `Engine.Cap`, `Transm`, `Color`, `Car.Type`)
+- Filled missing `Mileage` values with median
+- Detected and clipped outliers via IQR
+- Removed duplicate rows
+
+> 💡 **Suggestion:** Add a small table or image showing missing value counts before and after cleaning.
+
+---
+
+## 📊 Exploratory Data Analysis (EDA)
+
+Key insights from the data:
+- `Price` has a strong positive correlation with `Year` (~0.81)
+- Newer models and higher engine capacities tend to have higher prices
+- Mileage negatively correlates with price
+- White and silver cars are more common across listings
+
+### 🔍 Recommended Visualizations
+You can include these plots for better insight:
+- Boxplot: Price vs. Model  
+- Scatterplot: Year vs. Price  
+- Histogram: Price Distribution  
+- Heatmap: Feature Correlation
+
+```python
+# Example: Heatmap
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+sns.heatmap(df.corr(), annot=True, cmap='coolwarm')
+plt.title("Feature Correlation Heatmap")
+plt.show()
 
 ## Models evaluated
 The notebook trains and compares these models using R2, MSE, MAE, and RMSE metrics:
@@ -117,5 +165,8 @@ You can deploy this Gradio demo to Hugging Face Spaces. Two common approaches:
 - `best_model.joblib`, `encoders.joblib` — model and encoder artifacts produced by the notebook (not committed by default unless you choose to).
 - `Malaysia_Final_CarList_Compiled.csv` — dataset.
 
-## References
-- [Dataset (Kaggle)](https://www.kaggle.com/datasets/norazrinnatasha/malaysia-car-list-price)
+## Future Improvements
+- Add feature importance visualization
+- Experiment with XGBoost or CatBoost
+- Add deployment automation (CI/CD)
+- Improve app UI (add charts or value trends)
