@@ -1,8 +1,8 @@
-# Malaysia Car Price Prediction
+# Malaysia Car Price Prediction [(Kaggle)](https://www.kaggle.com/code/insyirahazman/perodua-car-price-prediction)
 
 This repository contains a Jupyter notebook and a small demo app that trains and evaluates models to predict used car prices in Malaysia. The primary notebook is `main.ipynb` and the dataset is `Malaysia_Final_CarList_Compiled.csv`.
 
-Live Websites: https://huggingface.co/spaces/insyirazman/car-price-prediction
+🔗Live Websites: https://huggingface.co/spaces/insyirazman/car-price-prediction
 
 
 https://github.com/user-attachments/assets/88e46061-631d-4a2b-a9d0-17d012d68501
