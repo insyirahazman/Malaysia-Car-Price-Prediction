@@ -71,6 +71,8 @@ sns.heatmap(df.corr(), annot=True, cmap='coolwarm')
 plt.title("Feature Correlation Heatmap")
 plt.show()
 
+---
+
 ## Models evaluated
 The notebook trains and compares these models using R2, MSE, MAE, and RMSE metrics:
 
