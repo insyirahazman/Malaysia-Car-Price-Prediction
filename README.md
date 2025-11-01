@@ -2,6 +2,10 @@
 
 This repository contains a Jupyter notebook and a small demo app that trains and evaluates models to predict used car prices in Malaysia. The primary notebook is `main.ipynb` and the dataset is `Malaysia_Final_CarList_Compiled.csv`.
 
+Live Websites: https://huggingface.co/spaces/insyirazman/car-price-prediction
+
+https://github.com/user-attachments/assets/8a03a588-d29e-4e13-be89-4c64f1808bf1
+
 ## Objective
 Predict the market price (`Price`) of used cars in Malaysia using vehicle attributes (Model, Year, Color, Engine.Cap, Mileage, etc.).
 
