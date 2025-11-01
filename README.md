@@ -146,7 +146,6 @@ You can deploy this Gradio demo to Hugging Face Spaces. Two common approaches:
 - `Malaysia_Final_CarList_Compiled.csv` — dataset.
 
 ## Future Improvements
-- Add feature importance visualization
 - Experiment with XGBoost or CatBoost
 - Add deployment automation (CI/CD)
 - Improve app UI (add charts or value trends)
