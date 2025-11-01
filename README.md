@@ -43,8 +43,6 @@ Estimate the **resale market price** (`Price`) of used Perodua cars based on:
 - Detected and clipped outliers via IQR
 - Removed duplicate rows
 
-> 💡 **Suggestion:** Add a small table or image showing missing value counts before and after cleaning.
-
 ---
 
 ## 📊 Exploratory Data Analysis (EDA)
