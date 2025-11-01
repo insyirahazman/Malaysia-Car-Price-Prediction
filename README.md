@@ -4,7 +4,9 @@ This repository contains a Jupyter notebook and a small demo app that trains and
 
 Live Websites: https://huggingface.co/spaces/insyirazman/car-price-prediction
 
-https://github.com/user-attachments/assets/8a03a588-d29e-4e13-be89-4c64f1808bf1
+
+https://github.com/user-attachments/assets/88e46061-631d-4a2b-a9d0-17d012d68501
+
 
 ## Objective
 Predict the market price (`Price`) of used cars in Malaysia using vehicle attributes (Model, Year, Color, Engine.Cap, Mileage, etc.).
