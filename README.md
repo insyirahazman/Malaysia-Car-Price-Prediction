@@ -2,13 +2,12 @@
 
 **Live Demo:** [Hugging Face Spaces](https://huggingface.co/spaces/insyirazman/car-price-prediction)  
 **Notebook on Kaggle:** [View Notebook](https://www.kaggle.com/code/insyirahazman/perodua-car-price-prediction)  
-**GitHub Repository:** [View Repo](https://github.com/insyirahazman/Malaysia-Car-Price-Prediction)
 
 https://github.com/user-attachments/assets/88e46061-631d-4a2b-a9d0-17d012d68501
 
 ---
 
-## 🧭 Project Overview
+## 🧭
 
 This project aims to **predict the resale price of Perodua cars in Malaysia** using real-world marketplace data.  
 It demonstrates the complete data science workflow — from **data cleaning and EDA** to **model training and deployment** with **Gradio** and **Hugging Face Spaces**.
